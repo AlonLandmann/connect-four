@@ -9,7 +9,6 @@
   display: flex;
   gap: 20px;
 }
-
 @mixin field {
   height: 80px;
   width: 80px;
@@ -35,4 +34,25 @@
   color: #888;
   background-color: #ddd;
   cursor: pointer;
+}
+.strengthOptions {
+  display: flex;
+  // flex-direction: column;
+  // align-items: center;
+  gap: 20px;
+}
+@mixin strength {
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.selectedStrength {
+  @include strength;
+  color: #0a7327;
+  background-color: #bbe2c6;
+}
+.notSelectedStrength {
+  @include strength;
+  color: #888;
+  background-color: #ddd;
 }
