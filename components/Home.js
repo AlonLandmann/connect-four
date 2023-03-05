@@ -3,7 +3,7 @@ import { useState } from 'react'
 
 export default function Home() {
   const [symbol, setSymbol] = useState('x')
-  const [start, setStart] = useState('x')
+  const [start, setStart] = useState('o')
   const [strength, setStrength] = useState('hard')
 
   return (
@@ -66,6 +66,8 @@ export default function Home() {
           tornado
         </div>
       </div>
+      <h2>Ready?</h2>
+      <button className={css.start}>START</button>
     </div>
   )
 }
