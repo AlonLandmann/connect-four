@@ -1,0 +1,38 @@
+.container {
+  padding: 10vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+.symbols {
+  display: flex;
+  gap: 20px;
+}
+
+@mixin field {
+  height: 80px;
+  width: 80px;
+  text-align: center;
+  font-size: 60px;
+  border-radius: 10px;
+  user-select: none;
+}
+.circle {
+  @include field;
+  color: #8b4848;
+  background-color: #eab2b2;
+  cursor: pointer;
+}
+.cross {
+  @include field;
+  color: #48608b;
+  background-color: #b2c8ea;
+  cursor: pointer;
+}
+.off {
+  @include field;
+  color: #888;
+  background-color: #ddd;
+  cursor: pointer;
+}

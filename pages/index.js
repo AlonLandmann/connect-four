@@ -1,6 +1,7 @@
 import Head from 'next/head'
+import Home from '@/components/Home'
 
-export default function Home() {
+export default function Index() {
   return (
     <>
       <Head>
@@ -11,7 +12,7 @@ export default function Home() {
       </Head>
 
       <main>
-        Connect 4
+        <Home />
       </main>
     </>
   )
