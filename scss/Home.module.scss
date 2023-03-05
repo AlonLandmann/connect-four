@@ -46,10 +46,15 @@
   border-radius: 5px;
   cursor: pointer;
 }
-.selectedStrength {
+.red {
   @include strength;
-  color: #555;
-  background-color: #ccc;
+  color: #8b4848;
+  background-color: #eab2b2;
+}
+.blue {
+  @include strength;
+  color: #48608b;
+  background-color: #b2c8ea;
 }
 .notSelectedStrength {
   @include strength;
